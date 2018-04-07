@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Object", "Object\Object.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caelum.Listas", "Caelum.Listas\Caelum.Listas.csproj", "{3801C0FF-6491-4DFF-8FEF-24765B0D24C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veiculo", "Veiculo\Veiculo.csproj", "{16F6F417-2198-46D1-86CE-69AB6F95C186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3801C0FF-6491-4DFF-8FEF-24765B0D24C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3801C0FF-6491-4DFF-8FEF-24765B0D24C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3801C0FF-6491-4DFF-8FEF-24765B0D24C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F6F417-2198-46D1-86CE-69AB6F95C186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F6F417-2198-46D1-86CE-69AB6F95C186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F6F417-2198-46D1-86CE-69AB6F95C186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F6F417-2198-46D1-86CE-69AB6F95C186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

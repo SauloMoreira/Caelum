@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Banco
@@ -131,6 +132,25 @@ namespace Banco
         {
             FormCadastroConta formulariodeCadastro = new FormCadastroConta(this);
             formulariodeCadastro.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var contaSaldoPositiva = contas.Where(c => c.saldo > 0).OrderBy(c => c.Titutar.Nome);
+
+            foreach (var conta in contaSaldoPositiva)
+            {
+                MessageBox.Show("Conta: " + conta.numero);
+            }
+            var TitulareseSaldos = contas.Select(c => new { c.saldo, c.Titutar.Nome });
+            foreach (var conta in TitulareseSaldos)
+            {
+                MessageBox.Show("Titulares: " + conta.Nome);
+            }
+            var TotaldeSaldos = contas.Sum(c => c.saldo);
+            MessageBox.Show("Saldo no Banco de todas as contas: " + TotaldeSaldos);
+
+
         }
     }
 }

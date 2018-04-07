@@ -40,8 +40,8 @@
             this.btnSaca = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.ComboContas = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.textBusca = new System.Windows.Forms.TextBox();
             this.comboDestinoTransferencia = new System.Windows.Forms.ComboBox();
@@ -55,6 +55,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnNovaConta = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -177,15 +178,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Busca da Conta";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(-3, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "selecionar por nome";
-            // 
             // ComboContas
             // 
             this.ComboContas.FormattingEnabled = true;
@@ -194,6 +186,15 @@
             this.ComboContas.Size = new System.Drawing.Size(121, 21);
             this.ComboContas.TabIndex = 2;
             this.ComboContas.SelectedIndexChanged += new System.EventHandler(this.ComboContas_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(-3, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "selecionar por nome";
             // 
             // btnBuscar
             // 
@@ -314,11 +315,22 @@
             this.btnNovaConta.UseVisualStyleBackColor = true;
             this.btnNovaConta.Click += new System.EventHandler(this.btnNovaConta_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 292);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 348);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNovaConta);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -367,6 +379,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnNovaConta;
+        private System.Windows.Forms.Button button1;
     }
 }
 
